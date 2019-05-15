@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title='Hello World'
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700', rel='stylesheet')
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    link(href='https://use.fontawesome.com/releases/v5.8.2/css/all.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/custom.css')
+    script(src="http://code.jquery.com/jquery-3.1.0.min.js")
+    script(src="/js/custom.js")
+
+  body
+    section.container.my-5.text-center
+      h1 María Isabel Pérez Barajas
+    div.container.searcher
+      div.row
+        div.col
+          input(
+              type='search'
+              class='form-control'
+              id='searcher'
+              placeholder='Search'
+              )
+    div.primer.mt-5
+      div.row
+        div.col-12.principal
+          section.container.results
+            div#div1.row
+              script(type='text/javascript').
+              // Pass as regular array here comming as variable
+              -var ob = JSON.parse(newsi)
+              -for(var prop in ob) //loop for print all information
+               //p #{prop}: #{ob[prop]["picture"]["medium"]}
+               div(id='newElement', class='col text-center resumen mb-5 p-3')
+                img(src=ob[prop]["picture"]["medium"], class='img-fluid rounded-circle')
+                h3.mt-3 #{ob[prop]["name"]["first"]} #{ob[prop]["name"]["last"]}
+                p #{ob[prop]["email"]}
+                p(style='white-space:pre;')
+                a(href='#element'+prop, class="btn btn-light mas", type='button', role='button', id=prop) Ver detalles
+        div.complement
+          section.container.results-full
+            div#div2.row
+
+
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
