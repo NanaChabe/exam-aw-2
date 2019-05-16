@@ -1,7 +1,6 @@
 {
   "name": "tutorialnode",
   "version": "1.0.0",
-  "description": "",
   "main": "hola.js",
   "scripts": {
     "start": "node hola.js"
@@ -20,5 +19,16 @@
     "jade": "^1.11.0",
     "request": "^2.88.0",
     "xtend": "^4.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NanaChabe/examjson.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/NanaChabe/examjson/issues"
+  },
+  "homepage": "https://github.com/NanaChabe/examjson#readme",
+  "description": ""
 }
