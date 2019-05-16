@@ -31,13 +31,12 @@ html
               // Pass as regular array here comming as variable
               -var ob = JSON.parse(newsi)
               -for(var prop in ob) //loop for print all information
-               //p #{prop}: #{ob[prop]["picture"]["medium"]}
-               div(id='newElement', class='col text-center resumen mb-5 p-3')
-                img(src=ob[prop]["picture"]["medium"], class='img-fluid rounded-circle')
-                h3.mt-3 #{ob[prop]["name"]["first"]} #{ob[prop]["name"]["last"]}
-                p #{ob[prop]["email"]}
-                p(style='white-space:pre;')
-                a(href='#element'+prop, class="btn btn-light mas", type='button', role='button', id=prop) Ver detalles
+                div(id='newElement', class='col text-center resumen mb-5 p-3')
+                  img(src=ob[prop]["picture"]["medium"], class='img-fluid rounded-circle')
+                  h3.mt-3 #{ob[prop]["name"]["first"]} #{ob[prop]["name"]["last"]}
+                  p #{ob[prop]["email"]}
+                  p(style='white-space:pre;')
+                  a(href='#element'+prop, class="btn btn-light mas", type='button', role='button', id=prop) Ver detalles
         div.complement
           section.container.results-full
             div#div2.row

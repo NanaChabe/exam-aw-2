@@ -22,11 +22,7 @@ app.set("view engine","jade");
 
 //call al the needed functions
 app.get('/', routes.index);
-app.get('/star', routes.star);
-app.get('/searching', routes.search);
-app.get('/restart', routes.search);
-app.get('/show', routes.show);
-app.get('/close', routes.close);
+app.get('/variables', routes.variables);
 
 //send respond to body
 app.listen(7000);

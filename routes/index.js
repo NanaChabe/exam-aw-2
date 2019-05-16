@@ -15,29 +15,9 @@ axios.get('https://randomuser.me/api/?results=12')
 //function for load page
 exports.index = function(req, res) {
   res.render('home',{newsi: JSON.stringify(toto)});
+  //res.render('home');
 };
 
-exports.star = function(req, res) {
-  res.send(toto);
-};
-
-//relate a event to a jquery function for filter results
-exports.search = function(req, res) {
-  res.send(toto);
-};
-
-//relate a event to a jquery function for restart results
-exports.restart = function(req, res) {
-  console.log(toto);
-  res.send(toto);
-};
-
-//relate a event to a jquery function for show all information
-exports.show = function(req, res) {
-  res.send(toto);
-};
-
-//relate a event to a jquery function for close all information
-exports.close = function(req, res) {
+exports.variables = function(req, res) {
   res.send(toto);
 };
