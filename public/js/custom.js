@@ -9,6 +9,9 @@ $('#searcher').on('keyup',(function(e){
     {
 
           $("#div2 div").remove();//remove individual information if is showing
+          //addClass for styles of results
+          $(".principal").removeClass("col-md-6");
+          $(".principal").addClass("col-12");
           $("#div1 #newElement").show();//show all the initial elements
 
 
@@ -31,7 +34,6 @@ $('#searcher').on('keyup',(function(e){
 $( "a.mas" ).on("click",function(){
   /*get id of the "button" element for match the index in the ajax callback
     save it in a variable*/
-    alert("s");
   var parameters = { ids: $(this).attr('id') };
   //funtions related to nodejs routes for use
   $.get( '/variables',parameters, function(data) {
